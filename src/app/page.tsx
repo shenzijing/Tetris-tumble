@@ -11,9 +11,9 @@ export default function Home() {
   useEffect(() => {
     // Add smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', (e: MouseEvent) => {
         e.preventDefault()
-        const targetId = this.getAttribute('href')?.substring(1)
+        const targetId = (e.currentTarget as HTMLAnchorElement).getAttribute('href')?.substring(1)
         document.getElementById(targetId)?.scrollIntoView({
           behavior: 'smooth'
         })
@@ -114,10 +114,10 @@ export default function Home() {
                 <p>Share your creations with other fans</p>
               </div>
             </div>
-            <a href="https://makerworld.com/en/models/79755?from=search#profileId-745804" 
-               className="cta-button" 
-               target="_blank" 
-               rel="noopener noreferrer">
+            <a href="https://makerworld.com/en/models/79755?from=search#profileId-745804"
+              className="cta-button"
+              target="_blank"
+              rel="noopener noreferrer">
               Download 3D Files
             </a>
           </div>

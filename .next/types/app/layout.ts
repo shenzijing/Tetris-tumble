@@ -1,4 +1,4 @@
-// File: /home/project/src/app/layout.tsx
+// File: D:\出海游戏站\Tetris tumble\Tetris-tumble\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
