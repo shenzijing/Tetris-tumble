@@ -1,17 +1,26 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Tetris Tumble',
-  description: 'The Classic Puzzle Game Reimagined',
+  title: 'Tetris Tumble - A Modern Take on the Classic Puzzle Game',
+  description: 'Experience Tetris Tumble, a fresh spin on the beloved puzzle game. Challenge yourself with classic block-stacking gameplay enhanced with modern features and smooth animations.',
+  keywords: 'tetris, puzzle game, block game, browser game, javascript game',
+  authors: [{ name: 'Your Name' }],
   openGraph: {
-    title: 'Tetris Tumble - Revolutionary 3D Printed Tetris Puzzle Game',
-    description: 'Experience the fusion of classic Tetris with innovative 3D printing technology. A new way to enjoy the timeless puzzle game.',
+    title: 'Tetris Tumble',
+    description: 'A Modern Take on the Classic Puzzle Game',
     type: 'website',
-    url: 'https://tetristumble.com',
+    images: ['/tetris-tumble.svg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tetris Tumble',
+    description: 'A Modern Take on the Classic Puzzle Game',
+    images: ['/tetris-tumble.svg'],
   },
   icons: {
     icon: '/tetris-tumble.svg',
@@ -26,6 +35,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          defer
+          data-domain="tetristumble.com"
+          src="https://app.pageview.app/js/script.js"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={inter.className}>
         <nav className="main-nav">
           <div className="nav-container">
@@ -41,7 +58,7 @@ export default function RootLayout({
         </nav>
         {children}
         <footer>
-          <p>&copy; 2024 Tetris Tumble. All rights reserved.</p>
+          <p>&copy; 2025 Tetris Tumble. All rights reserved.</p>
         </footer>
       </body>
     </html>
