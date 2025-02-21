@@ -3,8 +3,8 @@
 import { useEffect } from 'react'
 
 const instagramVideos = [
-  'https://www.instagram.com/reel/VIDEO_ID_1/embed',
-  'https://www.instagram.com/reel/VIDEO_ID_2/embed',
+  // 'https://www.instagram.com/p/DGRvsaHPp8P/embed',
+  'https://www.instagram.com/reel/DGQxYN2xe3R/embed'
 ]
 
 export default function Home() {
