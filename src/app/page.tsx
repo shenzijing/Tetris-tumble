@@ -14,10 +14,14 @@ export default function Home() {
       anchor.addEventListener('click', (e: Event) => {
         e.preventDefault()
         const target = e.currentTarget as HTMLAnchorElement
-        const targetId = target.getAttribute('href')?.substring(1)
-        document.getElementById(targetId)?.scrollIntoView({
-          behavior: 'smooth'
-        })
+        const href = target.getAttribute('href')
+        if (href) {  // 确保 href 存在
+          const targetId = href.substring(1)  // 移除 #
+          const element = document.getElementById(targetId)
+          element?.scrollIntoView({
+            behavior: 'smooth'
+          })
+        }
       })
     })
   }, [])

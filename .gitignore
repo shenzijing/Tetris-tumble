@@ -24,13 +24,20 @@ dist-ssr
 *.sw?
 
 # Next.js build output
-.next
 .next/
+.next/**/*
 out/
 
 # Next.js cache
 .next/cache/
 **/*.pack.gz
+
+# Build artifacts
+.next/server/
+.next/static/
+.next/types/
+dist/
+build/
 
 # Dependencies
 node_modules/
