@@ -11,9 +11,10 @@ export default function Home() {
   useEffect(() => {
     // Add smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', (e: MouseEvent) => {
+      anchor.addEventListener('click', (e: Event) => {
         e.preventDefault()
-        const targetId = (e.currentTarget as HTMLAnchorElement).getAttribute('href')?.substring(1)
+        const target = e.currentTarget as HTMLAnchorElement
+        const targetId = target.getAttribute('href')?.substring(1)
         document.getElementById(targetId)?.scrollIntoView({
           behavior: 'smooth'
         })
