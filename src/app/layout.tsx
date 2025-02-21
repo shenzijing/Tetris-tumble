@@ -5,14 +5,18 @@ import '../styles/globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Tetris Tumble - Revolutionary 3D Printed Tetris Puzzle Game',
-  description: 'Experience Tetris Tumble, a revolutionary 3D printed puzzle game that brings the classic Tetris gameplay into the physical world. Perfect for puzzle enthusiasts and Tetris fans.',
+  title: 'Tetris Tumble',
+  description: 'The Classic Puzzle Game Reimagined',
   openGraph: {
     title: 'Tetris Tumble - Revolutionary 3D Printed Tetris Puzzle Game',
     description: 'Experience the fusion of classic Tetris with innovative 3D printing technology. A new way to enjoy the timeless puzzle game.',
     type: 'website',
     url: 'https://tetristumble.com',
   },
+  icons: {
+    icon: '/tetris-tumble.svg',
+    apple: '/tetris-tumble.svg',
+  }
 }
 
 export default function RootLayout({

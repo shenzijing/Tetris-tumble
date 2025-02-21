@@ -15,11 +15,9 @@ export default function Home() {
         e.preventDefault()
         const target = e.currentTarget as HTMLAnchorElement
         const targetId = target.getAttribute('href')?.substring(1)
-        if (targetId) {
-          document.getElementById(targetId)?.scrollIntoView({
-            behavior: 'smooth'
-          })
-        }
+        document.getElementById(targetId)?.scrollIntoView({
+          behavior: 'smooth'
+        })
       })
     })
   }, [])
@@ -27,6 +25,13 @@ export default function Home() {
   return (
     <div id="app">
       <header className="hero">
+        <img
+          src="/tetris-tumble.svg"
+          alt="Tetris Tumble Logo"
+          className="logo"
+          width={100}
+          height={100}
+        />
         <h1>Tetris Tumble</h1>
         <p className="tagline">The Classic Puzzle Game Reimagined</p>
         <div className="hero-buttons">
