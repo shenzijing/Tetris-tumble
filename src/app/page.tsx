@@ -15,9 +15,11 @@ export default function Home() {
         e.preventDefault()
         const target = e.currentTarget as HTMLAnchorElement
         const targetId = target.getAttribute('href')?.substring(1)
-        document.getElementById(targetId)?.scrollIntoView({
-          behavior: 'smooth'
-        })
+        if (targetId) {
+          document.getElementById(targetId)?.scrollIntoView({
+            behavior: 'smooth'
+          })
+        }
       })
     })
   }, [])
