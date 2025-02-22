@@ -63,7 +63,6 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
-        <div id="ad-container" className="ad-wrapper"></div>
         <footer>
           <p>&copy; 2025 Tetris Tumble. All rights reserved.</p>
         </footer>
