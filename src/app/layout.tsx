@@ -7,7 +7,7 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Giant Tetris Tumble - A Modern Take on the Classic Puzzle Game',
+  title: 'Giant Tetris Tumble - A Fun, XL Family Board Game Twist on the Classic Puzzle',
   description: 'Experience Giant Tetris Tumble, a fresh spin on the beloved puzzle game. Challenge yourself with classic block-stacking gameplay enhanced with modern features and smooth animations.',
   keywords: 'tetris, puzzle game, block game, browser game, javascript game',
   authors: [{ name: 'Alan' }],

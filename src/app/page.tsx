@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import Image from 'next/image'
 
 // 添加广告脚本到头部
 const AdScript = () => {
@@ -56,12 +57,80 @@ export default function Home() {
         <h1>Giant Tetris Tumble</h1>
         <p className="tagline">The Classic Puzzle Game Reimagined</p>
         <div className="hero-buttons">
-          <a href="#about" className="cta-button hero-cta">Learn More</a>
+          <a href="#purchase-info" className="cta-button hero-cta">Get Now</a>
           <a href="#stores" className="cta-button hero-cta secondary">Find in Stores</a>
         </div>
       </header>
 
       <main>
+
+        {/* 在历史部分之前添加第一个广告位 */}
+        <div className="ad-container">
+          <div id="container-3f5586504a87ab35672e5527533ac2d3"></div>
+        </div>
+        {/* 添加产品详情区块 */}
+        <section className="product-details section">
+          <h1>Tetris XL Tumble Game</h1>
+          <div className="product-image-container">
+            <Image
+              src="/Tetris-XL-Tumble.jpg"
+              alt="Tetris XL Tumble Game - Giant Family Board Game"
+              width={800}
+              height={600}
+              priority
+              className="product-image"
+            />
+          </div>
+          <div className="product-info">
+            <div className="product-highlights">
+              <h2>Product Highlights</h2>
+              <ul>
+                <li>Giant-sized Tetris blocks for family entertainment</li>
+                <li>Perfect for ages 6 and up</li>
+                <li>Supports 1-4 players</li>
+                <li>High-quality durable plastic construction</li>
+              </ul>
+            </div>
+
+            <div className="product-specifications">
+              <h2>Specifications</h2>
+              <ul>
+                <li>Dimensions: 23.5" L x 12.5" W x 4.25" H</li>
+                <li>Weight: 6.25 lbs</li>
+                <li>Package Contents: Game board, 40 Tetris pieces, scoring markers</li>
+                <li>Material: Premium quality plastic</li>
+                <li>Assembly Required: Minimal</li>
+              </ul>
+            </div>
+
+            <div className="game-features">
+              <h2>Game Features</h2>
+              <ul>
+                <li>Classic Tetris gameplay in physical form</li>
+                <li>Oversized design for enhanced engagement</li>
+                <li>Easy to learn, challenging to master</li>
+                <li>Develops spatial awareness and strategic thinking</li>
+                <li>Perfect for family game nights</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* 添加 id 到购买信息区块 */}
+        <section id="purchase-info" className="purchase-info section">
+          <h2>Purchase Information</h2>
+          <div className="pricing">
+            <p className="price">Available at Costco</p>
+            <a
+              href="https://sovrn.co/f59pno0"
+              className="cta-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Shop at Costco
+            </a>
+          </div>
+        </section>
         <section id="about" className="section">
           <h2>About Giant Tetris Tumble</h2>
           <p>Giant Tetris Tumble brings the iconic puzzle game into the physical world through innovative 3D printing technology. Experience the classic gameplay in a whole new dimension, where strategy meets tangible interaction.</p>
@@ -80,11 +149,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* 在历史部分之前添加第一个广告位 */}
-        <div className="ad-container">
-          <div id="container-3f5586504a87ab35672e5527533ac2d3"></div>
-        </div>
 
         <section id="history" className="section">
           <h2>The Legacy of Tetris</h2>
@@ -172,6 +236,7 @@ export default function Home() {
             </a>
           </div>
         </section>
+
       </main>
     </div>
   )
