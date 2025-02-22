@@ -57,7 +57,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <nav className="main-nav">
           <div className="nav-container">
-            <Link href="/" className="logo">Tetris Tumble</Link>
+            <Link href="/" className="logo">Gaint Tetris Tumble</Link>
             <ul className="nav-links">
               <li><a href="#about">About</a></li>
               <li><a href="#history">History</a></li>
