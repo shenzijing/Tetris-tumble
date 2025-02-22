@@ -83,7 +83,7 @@ export default function Home() {
 
         {/* 在历史部分之前添加第一个广告位 */}
         <div className="ad-container">
-          <div id="container-3f5586504a87ab35672e5527533ac2d3-1"></div>
+          <div id="container-3f5586504a87ab35672e5527533ac2d3"></div>
         </div>
 
         <section id="history" className="section">
@@ -132,7 +132,7 @@ export default function Home() {
 
         {/* 在商店部分之前的第二个广告位 */}
         <div className="ad-container">
-          <div id="container-3f5586504a87ab35672e5527533ac2d3-2"></div>
+          <div id="container-3f5586504a87ab35672e5527533ac2d3"></div>
         </div>
 
         <section id="stores" className="section">
