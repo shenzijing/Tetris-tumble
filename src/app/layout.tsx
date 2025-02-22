@@ -7,8 +7,8 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Gaint Tetris Tumble - A Modern Take on the Classic Puzzle Game',
-  description: 'Experience Gaint Tetris Tumble, a fresh spin on the beloved puzzle game. Challenge yourself with classic block-stacking gameplay enhanced with modern features and smooth animations.',
+  title: 'Giant Tetris Tumble - A Modern Take on the Classic Puzzle Game',
+  description: 'Experience Giant Tetris Tumble, a fresh spin on the beloved puzzle game. Challenge yourself with classic block-stacking gameplay enhanced with modern features and smooth animations.',
   keywords: 'tetris, puzzle game, block game, browser game, javascript game',
   authors: [{ name: 'Alan' }],
   icons: {
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     ]
   },
   openGraph: {
-    title: 'Gaint Tetris Tumble',
+    title: 'Giant Tetris Tumble',
     description: 'A Modern Take on the Classic Puzzle Game',
     images: ['/tetris-tumble.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Gaint Tetris Tumble',
+    title: 'Giant Tetris Tumble',
     description: 'A Modern Take on the Classic Puzzle Game',
     images: ['/tetris-tumble.png'],
   }
