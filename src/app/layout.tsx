@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import '../styles/globals.css'
+import './globals.css'
 import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -47,6 +47,11 @@ export default function RootLayout({
           src="https://app.pageview.app/js/script.js"
           strategy="afterInteractive"
         />
+        <Script
+          src="//pl25935318.effectiveratecpm.com/5c/84/aa/5c84aa389eb1210f949e2a88fd5344dc.js"
+          strategy="lazyOnload"
+          id="ad-script"
+        />
       </head>
       <body className={inter.className}>
         <nav className="main-nav">
@@ -62,6 +67,7 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
+        <div id="ad-container" className="ad-wrapper"></div>
         <footer>
           <p>&copy; 2025 Tetris Tumble. All rights reserved.</p>
         </footer>
