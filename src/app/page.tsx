@@ -14,16 +14,6 @@ const AdScript = () => {
   return null;
 }
 
-// 添加第二个广告脚本组件
-const SecondAdScript = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.textContent = `(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('groleegni.net',8989978,document.createElement('script'))`;
-    document.body.appendChild(script);
-  }, []);
-  return null;
-}
-
 const instagramVideos = [
   // 'https://www.instagram.com/p/DGRvsaHPp8P/embed',
   'https://www.instagram.com/reel/DGQxYN2xe3R/embed'
@@ -180,9 +170,6 @@ export default function Home() {
               rel="noopener noreferrer">
               Download 3D Files
             </a>
-          </div>
-          <div className="ad-container">
-            <div id="container-3f5586504a87ab35672e5527533ac2d3-1"></div>
           </div>
         </section>
       </main>
