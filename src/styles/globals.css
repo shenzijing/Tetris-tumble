@@ -331,3 +331,40 @@ footer {
         padding: 0.5rem;
     }
 }
+
+/* 现有的广告容器样式保持不变 */
+
+/* YouTube 视频容器样式 */
+.youtube-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto 0;
+    padding-top: 56.25%;
+    /* 16:9 宽高比 */
+}
+
+.youtube-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 调整视频网格布局 */
+.video-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .youtube-container {
+        margin: 1rem auto 0;
+    }
+}

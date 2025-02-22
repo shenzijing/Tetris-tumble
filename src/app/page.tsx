@@ -117,6 +117,17 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* 添加 YouTube 视频容器 */}
+          <div className="youtube-container">
+            <iframe
+              src="https://www.youtube.com/embed/msHBaVHWSCs"
+              title="Costco Tetris Game Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
         </section>
 
         {/* 在商店部分之前添加第二个广告位 */}
