@@ -47,6 +47,12 @@ export default function RootLayout({
           src="https://app.pageview.app/js/script.js"
           strategy="afterInteractive"
         />
+        <Script
+          async
+          data-cfasync="false"
+          src="/pl25935153.effectiveratecpm.com/3f586504a87ab35672e5527533ac2d3/invoke.js"
+          strategy="lazyOnload"
+        />
       </head>
       <body className={inter.className}>
         <nav className="main-nav">
