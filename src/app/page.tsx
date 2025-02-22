@@ -53,7 +53,7 @@ export default function Home() {
             height={100}
           />
         </picture>
-        <h1>Tetris Tumble</h1>
+        <h1>Gaint Tetris Tumble</h1>
         <p className="tagline">The Classic Puzzle Game Reimagined</p>
         <div className="hero-buttons">
           <a href="#about" className="cta-button hero-cta">Learn More</a>
@@ -63,8 +63,8 @@ export default function Home() {
 
       <main>
         <section id="about" className="section">
-          <h2>About Tetris Tumble</h2>
-          <p>Tetris Tumble brings the iconic puzzle game into the physical world through innovative 3D printing technology. Experience the classic gameplay in a whole new dimension, where strategy meets tangible interaction.</p>
+          <h2>About Gaint Tetris Tumble</h2>
+          <p>Gaint Tetris Tumble brings the iconic puzzle game into the physical world through innovative 3D printing technology. Experience the classic gameplay in a whole new dimension, where strategy meets tangible interaction.</p>
           <div className="features">
             <div className="feature">
               <h3>Classic Mechanics</h3>
