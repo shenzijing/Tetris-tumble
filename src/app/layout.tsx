@@ -10,21 +10,26 @@ export const metadata: Metadata = {
   description: 'Experience Tetris Tumble, a fresh spin on the beloved puzzle game. Challenge yourself with classic block-stacking gameplay enhanced with modern features and smooth animations.',
   keywords: 'tetris, puzzle game, block game, browser game, javascript game',
   authors: [{ name: 'Your Name' }],
+  icons: {
+    icon: [
+      { url: '/tetris-tumble.ico', sizes: 'any' },
+      { url: '/tetris-tumble.png', type: 'image/png' },
+      { url: '/tetris-tumble.svg', type: 'image/svg+xml' }
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
+    ]
+  },
   openGraph: {
     title: 'Tetris Tumble',
     description: 'A Modern Take on the Classic Puzzle Game',
-    type: 'website',
-    images: ['/tetris-tumble.svg'],
+    images: ['/tetris-tumble.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tetris Tumble',
     description: 'A Modern Take on the Classic Puzzle Game',
-    images: ['/tetris-tumble.svg'],
-  },
-  icons: {
-    icon: '/tetris-tumble.svg',
-    apple: '/tetris-tumble.svg',
+    images: ['/tetris-tumble.png'],
   }
 }
 

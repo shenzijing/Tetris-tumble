@@ -29,13 +29,16 @@ export default function Home() {
   return (
     <div id="app">
       <header className="hero">
-        <img
-          src="/tetris-tumble.svg"
-          alt="Tetris Tumble Logo"
-          className="logo"
-          width={100}
-          height={100}
-        />
+        <picture>
+          <source srcSet="/tetris-tumble.svg" type="image/svg+xml" />
+          <img
+            src="/tetris-tumble.png"
+            alt="Tetris Tumble Logo"
+            className="logo"
+            width={100}
+            height={100}
+          />
+        </picture>
         <h1>Tetris Tumble</h1>
         <p className="tagline">The Classic Puzzle Game Reimagined</p>
         <div className="hero-buttons">
@@ -45,6 +48,8 @@ export default function Home() {
       </header>
 
       <main>
+        <div id="container-3f586504a87ab35672e5527533ac2d3"></div>
+
         <section id="about" className="section">
           <h2>About Tetris Tumble</h2>
           <p>Tetris Tumble brings the iconic puzzle game into the physical world through innovative 3D printing technology. Experience the classic gameplay in a whole new dimension, where strategy meets tangible interaction.</p>
