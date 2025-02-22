@@ -2,6 +2,18 @@
 
 import { useEffect } from 'react'
 
+// 添加广告脚本到头部
+const AdScript = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "//pl25935153.effectiveratecpm.com/3f5586504a87ab35672e5527533ac2d3/invoke.js";
+    script.async = true;
+    script.setAttribute('data-cfasync', 'false');
+    document.head.appendChild(script);
+  }, []);
+  return null;
+}
+
 const instagramVideos = [
   // 'https://www.instagram.com/p/DGRvsaHPp8P/embed',
   'https://www.instagram.com/reel/DGQxYN2xe3R/embed'
@@ -28,6 +40,8 @@ export default function Home() {
 
   return (
     <div id="app">
+      <AdScript />
+
       <header className="hero">
         <picture>
           <source srcSet="/tetris-tumble.svg" type="image/svg+xml" />
@@ -48,8 +62,6 @@ export default function Home() {
       </header>
 
       <main>
-        <div id="container-3f586504a87ab35672e5527533ac2d3"></div>
-
         <section id="about" className="section">
           <h2>About Tetris Tumble</h2>
           <p>Tetris Tumble brings the iconic puzzle game into the physical world through innovative 3D printing technology. Experience the classic gameplay in a whole new dimension, where strategy meets tangible interaction.</p>
@@ -68,6 +80,11 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* 在历史部分之前添加第一个广告位 */}
+        <div className="ad-container">
+          <div id="container-3f5586504a87ab35672e5527533ac2d3"></div>
+        </div>
 
         <section id="history" className="section">
           <h2>The Legacy of Tetris</h2>
@@ -101,6 +118,11 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        {/* 在商店部分之前添加第二个广告位 */}
+        <div className="ad-container">
+          <div id="container-3f5586504a87ab35672e5527533ac2d3"></div>
+        </div>
 
         <section id="stores" className="section">
           <h2>Where to Find Us</h2>
