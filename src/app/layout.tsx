@@ -48,11 +48,6 @@ export default function RootLayout({
           src="https://app.pageview.app/js/script.js"
           strategy="afterInteractive"
         />
-        <Script
-          src="//pl25935318.effectiveratecpm.com/5c/84/aa/5c84aa389eb1210f949e2a88fd5344dc.js"
-          strategy="lazyOnload"
-          id="ad-script"
-        />
       </head>
       <body className={inter.className}>
         <nav className="main-nav">
