@@ -46,6 +46,13 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.logo:hover {
+    opacity: 0.9;
 }
 
 .nav-links {

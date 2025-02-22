@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -56,7 +57,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <nav className="main-nav">
           <div className="nav-container">
-            <div className="logo">Tetris Tumble</div>
+            <Link href="/" className="logo">Tetris Tumble</Link>
             <ul className="nav-links">
               <li><a href="#about">About</a></li>
               <li><a href="#history">History</a></li>
