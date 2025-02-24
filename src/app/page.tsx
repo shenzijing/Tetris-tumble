@@ -15,6 +15,32 @@ const AdScript = () => {
   return null;
 }
 
+// Google Tag Manager 组件
+const GoogleTagManager = () => {
+  useEffect(() => {
+    // 创建并插入 GTM 脚本
+    const script = document.createElement('script');
+    script.innerHTML = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NBXTC47B');`;
+    document.head.appendChild(script);
+
+    // 创建并插入 GTM noscript 元素
+    const noscript = document.createElement('noscript');
+    const iframe = document.createElement('iframe');
+    iframe.src = "https://www.googletagmanager.com/ns.html?id=GTM-NBXTC47B";
+    iframe.height = "0";
+    iframe.width = "0";
+    iframe.style.display = "none";
+    iframe.style.visibility = "hidden";
+    noscript.appendChild(iframe);
+    document.body.insertBefore(noscript, document.body.firstChild);
+  }, []);
+  return null;
+};
+
 const instagramVideos = [
   // 'https://www.instagram.com/p/DGRvsaHPp8P/embed',
   'https://www.instagram.com/reel/DGQxYN2xe3R/embed'
@@ -41,6 +67,7 @@ export default function Home() {
 
   return (
     <div id="app">
+      <GoogleTagManager />
       <AdScript />
 
       <header className="hero">

@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
 import Link from 'next/link'
+import Navbar from './components/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -56,21 +57,33 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <nav className="main-nav">
-          <div className="nav-container">
-            <Link href="/" className="logo">Giant Tetris Tumble</Link>
-            <ul className="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#history">History</a></li>
-              <li><a href="#videos">Videos</a></li>
-              <li><a href="#stores">Stores</a></li>
-              <li><a href="#print">3D Print</a></li>
-            </ul>
-          </div>
-        </nav>
+        <Navbar />
         {children}
-        <footer>
-          <p>&copy; 2025 Tetris Tumble. All rights reserved.</p>
+        <footer className="site-footer">
+          <div className="footer-content">
+            <div className="footer-section">
+              <h3>Contact Us</h3>
+              <p>Email: <a href="mailto:info@tetristumble.com">info@tetristumble.com</a></p>
+            </div>
+            <div className="footer-section">
+              <h3>Legal</h3>
+              <ul>
+                <li><Link href="/privacy">Privacy Policy</Link></li>
+                <li><Link href="/terms">Terms of Service</Link></li>
+              </ul>
+            </div>
+            <div className="footer-section">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><Link href="/about">About</Link></li>
+                <li><Link href="/stores">Find in Stores</Link></li>
+                <li><Link href="/print">3D Print</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p>&copy; {new Date().getFullYear()} Tetris Tumble. All rights reserved.</p>
+          </div>
         </footer>
       </body>
     </html>
