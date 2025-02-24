@@ -202,8 +202,8 @@ export default function Home() {
         <section id="stores" className="section">
           <h2>Where to Find Us</h2>
           <div className="store-info">
-            <p>Tetris Tumble is available at select Tesco stores in the games and toys section.</p>
-            <a href="https://www.tesco.com/store-locator/uk/" className="cta-button" target="_blank" rel="noopener noreferrer">
+            <p>Tetris Tumble is available at select Costco stores in the games and toys section.</p>
+            <a href="https://www.costco.com/warehouse-locations" className="cta-button" target="_blank" rel="noopener noreferrer">
               Find Nearest Store
             </a>
           </div>

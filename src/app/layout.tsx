@@ -12,13 +12,19 @@ export const metadata: Metadata = {
   keywords: 'tetris, puzzle game, block game, browser game, javascript game',
   authors: [{ name: 'Alan' }],
   icons: {
-    icon: [
-      { url: '/tetris-tumble.ico', sizes: 'any' },
-      { url: '/tetris-tumble.png', type: 'image/png' },
-      { url: '/tetris-tumble.svg', type: 'image/svg+xml' }
-    ],
-    apple: [
-      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
+    icon: '/tetris-tumble.ico',
+    shortcut: '/tetris-tumble.ico',
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        url: '/tetris-tumble.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/svg+xml',
+        url: '/tetris-tumble.svg',
+      }
     ]
   },
   openGraph: {
