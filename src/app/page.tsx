@@ -41,6 +41,25 @@ const GoogleTagManager = () => {
   return null;
 };
 
+// Google AdSense 组件
+const GoogleAdSense = () => {
+  useEffect(() => {
+    // 添加 meta 标签
+    const meta = document.createElement('meta');
+    meta.name = "google-adsense-account";
+    meta.content = "ca-pub-9742784810661665";
+    document.head.appendChild(meta);
+
+    // 添加 script 标签
+    const script = document.createElement('script');
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9742784810661665";
+    script.async = true;
+    script.crossOrigin = "anonymous";
+    document.head.appendChild(script);
+  }, []);
+  return null;
+};
+
 const instagramVideos = [
   // 'https://www.instagram.com/p/DGRvsaHPp8P/embed',
   'https://www.instagram.com/reel/DGQxYN2xe3R/embed'
@@ -69,6 +88,7 @@ export default function Home() {
     <div id="app">
       <GoogleTagManager />
       <AdScript />
+      <GoogleAdSense />
 
       <header className="hero">
         <picture>
