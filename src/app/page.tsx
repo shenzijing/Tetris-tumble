@@ -200,7 +200,7 @@ export default function Home() {
         </div>
 
         <section id="stores" className="section">
-          <h2>Where to Find Us</h2>
+          <h2>Where to Find Costco </h2>
           <div className="store-info">
             <p>Tetris Tumble is available at select Costco stores in the games and toys section.</p>
             <a href="https://www.costco.com/warehouse-locations" className="cta-button" target="_blank" rel="noopener noreferrer">
