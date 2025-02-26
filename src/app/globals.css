@@ -709,3 +709,137 @@ footer {
         margin-bottom: 2rem;
     }
 }
+
+.product-details {
+    padding: 2rem;
+}
+
+.product-image-container {
+    margin-bottom: 2rem;
+}
+
+.product-info {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-block {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-block h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.info-block p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.feature-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4a90e2;
+}
+
+.how-to-play {
+    background-color: #f8f9fa;
+    padding: 4rem 2rem;
+}
+
+.gameplay-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gameplay-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2c3e50;
+}
+
+.gameplay-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.step {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step h3 {
+    color: #1a73e8;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8eaed;
+}
+
+.step .feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.step .feature-list li {
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.step .feature-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1a73e8;
+}
+
+.step .feature-list li strong {
+    color: #1a73e8;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .gameplay-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        margin-bottom: 1rem;
+    }
+}

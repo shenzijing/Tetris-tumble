@@ -105,7 +105,7 @@ export default function Home() {
         <p className="tagline">The Classic Puzzle Game Reimagined</p>
         <div className="hero-buttons">
           <a href="#purchase-info" className="cta-button hero-cta">Get Now</a>
-          <a href="#stores" className="cta-button hero-cta secondary">Find in Stores</a>
+          <a href="#how-to-play" className="cta-button hero-cta secondary">How to Play</a>
         </div>
       </header>
 
@@ -129,14 +129,14 @@ export default function Home() {
             />
           </div>
           <div className="product-info">
-            <div className="game-description">
+            <div className="info-block">
               <h2>Experience the Ultimate Family Tetris Board Game</h2>
               <p>The Giant Tetris XL Tumble transforms the classic puzzle game into an exciting physical challenge. This oversized family board game features a unique tilting tower mechanism where players strategically stack large Tetris blocks (Tetriminos) while the tower shifts and sways. Perfect for family game nights, parties, and outdoor entertainment, this innovative adaptation of the world-famous Tetris puzzle game creates unforgettable moments of fun and excitement for players of all ages.</p>
             </div>
 
-            <div className="product-highlights">
+            <div className="info-block">
               <h2>Why Choose Tetris XL Tumble?</h2>
-              <ul>
+              <ul className="feature-list">
                 <li>Revolutionary tilting tower mechanics for enhanced gameplay experience</li>
                 <li>Versatile game modes: competitive multiplayer or challenging solo play</li>
                 <li>Family-friendly entertainment suitable for ages 6 and up</li>
@@ -146,9 +146,9 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="package-contents">
+            <div className="info-block">
               <h2>Complete Game Set Includes</h2>
-              <ul>
+              <ul className="feature-list">
                 <li>1 Giant Tetris tumble base with tilting mechanism</li>
                 <li>22 Oversized Tetrimino game pieces in classic Tetris colors</li>
                 <li>1 Extra-large game die for added randomness</li>
@@ -156,9 +156,9 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="product-specifications">
+            <div className="info-block">
               <h2>Product Specifications</h2>
-              <ul>
+              <ul className="feature-list">
                 <li>Large Game Base: 34.8" Width x 5.12" Length x 15.43" Height</li>
                 <li>Substantial Base Weight: 18.52 lbs for stability</li>
                 <li>Multiple Tetrimino Sizes: Varied dimensions for strategic stacking</li>
@@ -166,9 +166,9 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="gameplay-modes">
+            <div className="info-block">
               <h2>Multiple Ways to Play Your Giant Tetris Tumble Game</h2>
-              <ul>
+              <ul className="feature-list">
                 <li><strong>Family Competition Mode:</strong> Exciting head-to-head matches for 2+ players</li>
                 <li><strong>Single Player Challenge:</strong> Test your stacking skills and beat personal records</li>
                 <li><strong>Party Game Format:</strong> Perfect for entertainment at gatherings and events</li>
@@ -176,9 +176,9 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="ideal-occasions">
+            <div className="info-block">
               <h2>Perfect for Every Occasion</h2>
-              <ul>
+              <ul className="feature-list">
                 <li>Family Game Nights</li>
                 <li>Birthday Parties</li>
                 <li>Outdoor BBQs and Picnics</li>
@@ -189,7 +189,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* 添加 id 到购买信息区块 */}
         <section id="purchase-info" className="purchase-info section">
           <h2>Purchase Information</h2>
@@ -205,6 +204,54 @@ export default function Home() {
             </a>
           </div>
         </section>
+        {/* 产品详情区块后 */}
+        <section id="how-to-play" className="how-to-play section">
+          <h2>How to Play Giant Tetris XL Tumble</h2>
+          <div className="gameplay-content">
+            <div className="gameplay-intro">
+              <p className="intro-text">
+                Tetris XL Tumble is designed to challenge players with a dynamic, tilting tower, players strategically stack oversized Tetris blocks as the tower shifts and sways. With each move, the balance of the tower changes, so stack carefully! Play head-to-head to see who can topple the tower first or play solo to see how high you can stack it! Tetris XL Tumble brings a fresh, engaging spin to one of the world's most famous puzzle games, making it a must-have game for all ages.
+              </p>
+            </div>
+
+            <div className="gameplay-steps">
+              <div className="step">
+                <h3>1. Setup</h3>
+                <p>Place the Tetris XL Tumble base on a flat, stable surface and ensure all players can easily reach the tower.</p>
+              </div>
+
+              <div className="step">
+                <h3>2. Basic Rules</h3>
+                <p>Players take turns stacking oversized Tetris blocks (Tetriminos) onto the dynamic, tilting tower. The tower's balance shifts with each placement, adding an exciting challenge to every move!</p>
+              </div>
+
+              <div className="step">
+                <h3>3. Game Modes</h3>
+                <ul className="feature-list">
+                  <li><strong>Competitive Mode:</strong> Play head-to-head and try to force your opponent to make the tower fall</li>
+                  <li><strong>Solo Challenge:</strong> Test your skills by seeing how high you can stack the tower</li>
+                </ul>
+              </div>
+
+              <div className="step">
+                <h3>4. Strategic Tips</h3>
+                <ul className="feature-list">
+                  <li>Carefully consider the weight distribution of each piece</li>
+                  <li>Watch how the tower shifts after each placement</li>
+                  <li>Plan your moves ahead to maintain balance</li>
+                  <li>Use the tilting mechanism to your advantage</li>
+                </ul>
+              </div>
+
+              <div className="step">
+                <h3>5. Winning the Game</h3>
+                <p>In competitive mode, the last player to successfully place their piece without causing the tower to fall wins! In solo mode, try to beat your personal best height record.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
         <section id="about" className="section">
           <h2>About Giant Tetris Tumble</h2>
           <p>Giant Tetris Tumble brings the iconic puzzle game into the physical world through innovative 3D printing technology. Experience the classic gameplay in a whole new dimension, where strategy meets tangible interaction.</p>
