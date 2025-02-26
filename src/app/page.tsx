@@ -121,7 +121,7 @@ export default function Home() {
           <div className="product-image-container">
             <Image
               src="/Tetris-XL-Tumble.jpg"
-              alt="Tetris XL Tumble Game - Giant Family Board Game"
+              alt="Giant Tetris XL Tumble Game - Interactive Family Stacking Tower Game with Oversized Blocks"
               width={800}
               height={600}
               priority
@@ -129,35 +129,62 @@ export default function Home() {
             />
           </div>
           <div className="product-info">
+            <div className="game-description">
+              <h2>Experience the Ultimate Family Tetris Board Game</h2>
+              <p>The Giant Tetris XL Tumble transforms the classic puzzle game into an exciting physical challenge. This oversized family board game features a unique tilting tower mechanism where players strategically stack large Tetris blocks (Tetriminos) while the tower shifts and sways. Perfect for family game nights, parties, and outdoor entertainment, this innovative adaptation of the world-famous Tetris puzzle game creates unforgettable moments of fun and excitement for players of all ages.</p>
+            </div>
+
             <div className="product-highlights">
-              <h2>Product Highlights</h2>
+              <h2>Why Choose Tetris XL Tumble?</h2>
               <ul>
-                <li>Giant-sized Tetris blocks for family entertainment</li>
-                <li>Perfect for ages 6 and up</li>
-                <li>Supports 1-4 players</li>
-                <li>High-quality durable plastic construction</li>
+                <li>Revolutionary tilting tower mechanics for enhanced gameplay experience</li>
+                <li>Versatile game modes: competitive multiplayer or challenging solo play</li>
+                <li>Family-friendly entertainment suitable for ages 6 and up</li>
+                <li>Durable construction for both indoor and outdoor gaming</li>
+                <li>Large-scale design for immersive physical gameplay</li>
+                <li>Develops strategic thinking and spatial awareness skills</li>
+              </ul>
+            </div>
+
+            <div className="package-contents">
+              <h2>Complete Game Set Includes</h2>
+              <ul>
+                <li>1 Giant Tetris tumble base with tilting mechanism</li>
+                <li>22 Oversized Tetrimino game pieces in classic Tetris colors</li>
+                <li>1 Extra-large game die for added randomness</li>
+                <li>Comprehensive instruction manual with game variations</li>
               </ul>
             </div>
 
             <div className="product-specifications">
-              <h2>Specifications</h2>
+              <h2>Product Specifications</h2>
               <ul>
-                <li>Dimensions: 23.5" L x 12.5" W x 4.25" H</li>
-                <li>Weight: 6.25 lbs</li>
-                <li>Package Contents: Game board, 40 Tetris pieces, scoring markers</li>
-                <li>Material: Premium quality plastic</li>
-                <li>Assembly Required: Minimal</li>
+                <li>Large Game Base: 34.8" Width x 5.12" Length x 15.43" Height</li>
+                <li>Substantial Base Weight: 18.52 lbs for stability</li>
+                <li>Multiple Tetrimino Sizes: Varied dimensions for strategic stacking</li>
+                <li>Premium Quality Materials: Built for long-lasting durability</li>
               </ul>
             </div>
 
-            <div className="game-features">
-              <h2>Game Features</h2>
+            <div className="gameplay-modes">
+              <h2>Multiple Ways to Play Your Giant Tetris Tumble Game</h2>
               <ul>
-                <li>Classic Tetris gameplay in physical form</li>
-                <li>Oversized design for enhanced engagement</li>
-                <li>Easy to learn, challenging to master</li>
-                <li>Develops spatial awareness and strategic thinking</li>
-                <li>Perfect for family game nights</li>
+                <li><strong>Family Competition Mode:</strong> Exciting head-to-head matches for 2+ players</li>
+                <li><strong>Single Player Challenge:</strong> Test your stacking skills and beat personal records</li>
+                <li><strong>Party Game Format:</strong> Perfect for entertainment at gatherings and events</li>
+                <li><strong>Educational Play:</strong> Enhance problem-solving and spatial reasoning</li>
+              </ul>
+            </div>
+
+            <div className="ideal-occasions">
+              <h2>Perfect for Every Occasion</h2>
+              <ul>
+                <li>Family Game Nights</li>
+                <li>Birthday Parties</li>
+                <li>Outdoor BBQs and Picnics</li>
+                <li>School Activities</li>
+                <li>Team Building Events</li>
+                <li>Holiday Gatherings</li>
               </ul>
             </div>
           </div>
