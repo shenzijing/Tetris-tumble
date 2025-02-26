@@ -843,3 +843,10 @@ footer {
         margin-bottom: 1rem;
     }
 }
+
+.ad-container2 {
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 728px;
+    /* 匹配广告的宽度 */
+}

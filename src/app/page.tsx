@@ -204,6 +204,28 @@ export default function Home() {
             </a>
           </div>
         </section>
+
+        {/* 添加新的广告容器 */}
+        <div className="ad-container2">
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                atOptions = {
+                  'key' : '69b28a621ded37a5116dbe14c0d7045c',
+                  'format' : 'iframe',
+                  'height' : 90,
+                  'width' : 728,
+                  'params' : {}
+                };
+              `
+            }}
+          />
+          <script
+            src="//www.highperformanceformat.com/69b28a621ded37a5116dbe14c0d7045c/invoke.js"
+            async
+          />
+        </div>
+
         {/* 产品详情区块后 */}
         <section id="how-to-play" className="how-to-play section">
           <h2>How to Play Giant Tetris XL Tumble</h2>
