@@ -65,6 +65,38 @@ const instagramVideos = [
   'https://www.instagram.com/reel/DGQxYN2xe3R/embed'
 ]
 
+// 添加新的广告组件
+const HighPerformanceAd = () => {
+  useEffect(() => {
+    // 首先添加配置脚本
+    const configScript = document.createElement('script');
+    configScript.text = `
+      atOptions = {
+        'key' : '69b28a621ded37a5116dbe14c0d7045c',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    `;
+    document.head.appendChild(configScript);
+
+    // 然后添加广告脚本
+    const adScript = document.createElement('script');
+    adScript.src = "//www.highperformanceformat.com/69b28a621ded37a5116dbe14c0d7045c/invoke.js";
+    adScript.async = true;
+    document.head.appendChild(adScript);
+
+    // 清理函数
+    return () => {
+      document.head.removeChild(configScript);
+      document.head.removeChild(adScript);
+    };
+  }, []);
+
+  return <div className="ad-container2" />;
+};
+
 export default function Home() {
   useEffect(() => {
     // Add smooth scrolling for anchor links
@@ -205,26 +237,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 添加新的广告容器 */}
-        <div className="ad-container2">
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                atOptions = {
-                  'key' : '69b28a621ded37a5116dbe14c0d7045c',
-                  'format' : 'iframe',
-                  'height' : 90,
-                  'width' : 728,
-                  'params' : {}
-                };
-              `
-            }}
-          />
-          <script
-            src="//www.highperformanceformat.com/69b28a621ded37a5116dbe14c0d7045c/invoke.js"
-            async
-          />
-        </div>
+        {/* 使用新的广告组件 */}
+        <HighPerformanceAd />
 
         {/* 产品详情区块后 */}
         <section id="how-to-play" className="how-to-play section">
